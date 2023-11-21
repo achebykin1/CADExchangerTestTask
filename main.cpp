@@ -110,14 +110,15 @@ int main()
 
     std::vector<geometricShape*> CircleSequence = findCirclesFromSequence(ShapeSequence);
     std::vector<geometricShape*> SortedCircleSequence = sortCirclesByRadius(CircleSequence);
-    std::cout << "\n";
-    std::cout << "Only circles Points and First Derivatives at t = 0:\n";
-    printPointsAndFirstDerivatives(CircleSequence);
-    std::cout << "\nunsorted:\n";
-    printCircleRadii(CircleSequence);           //not sure that this function is needed
-    std::cout << "\nsorted:\n";
-    printCircleRadii(SortedCircleSequence);           //not sure that this function is needed
-    std::cout << "Circles radii sum: " << sumCirclesRadii(CircleSequence) << "\n";
+    double sumOfRadii = sumCirclesRadii(CircleSequence);
+    //std::cout << "\n";
+    //std::cout << "Only circles Points and First Derivatives at t = 0:\n";
+    //printPointsAndFirstDerivatives(CircleSequence);
+    //std::cout << "\nunsorted:\n";
+    //printCircleRadii(CircleSequence);           //not sure that this function is needed
+    //std::cout << "\nsorted:\n";
+    //printCircleRadii(SortedCircleSequence);           //not sure that this function is needed
+    //std::cout << "Circles radii sum: " << sumCirclesRadii(CircleSequence) << "\n";
     for (int i = 0; i < ShapeSequence.size(); ++i)
         delete ShapeSequence.at(i);
 }
