@@ -1,7 +1,7 @@
 # CADExchangerTestTask
 Test task for application to the job
 
-Тестовое задания я выполнял с помощью Ubuntu 22.04, код написан в VSCode с использованием Cmake-a проект сторился с помощью: GCC 11.4.0 x86_64-linux-gnu.
+Тестовое задание я выполнял с помощью Ubuntu 22.04, код написан в VSCode с использованием Cmake-a проект сторился с помощью: GCC 11.4.0 x86_64-linux-gnu.
 #
 Для постройки проекта нужно написать:
 ```sh
